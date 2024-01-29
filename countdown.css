@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: "Oswald", sans-serif;
+}
+
+html {
+  font-size: 20px;
+}
+.center-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  height: 100vh;
+  width: 100vw;
+}
+.countdown-card {
+  height: 50vh;
+  width: 50vw;
+}
+.row {
+  display: flex;
+}
+
+.square {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  background-color: #161616;
+  outline: 2px solid #333333;
+}
+
+.square > p {
+  color: ghostwhite;
+  position: absolute;
+  right: 0%;
+  bottom: 10%;
+  font-size: 2.5rem;
+  font-family: var(--font-family);
+  font-weight: 700;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.square > h1 {
+  font-size: 12rem;
+  font-family: var(--font-family);
+  background: -webkit-linear-gradient(#cccccc, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+/* Tablet (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .countdown-card {
+    width: 90vw;
+  }
+}
